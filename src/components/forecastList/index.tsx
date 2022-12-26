@@ -7,8 +7,10 @@ const ForecastList = () => {
 
   return dailyForecasts ? (
     dailyForecasts.length ? (
-      <div>
-        <div className="mb-4 text-3xl">7 days forecast for {location}</div>
+      <div data-testid="forecast-list">
+        <div data-testid="location" className="mb-4 text-3xl">
+          7 days forecast for {location}
+        </div>
         <div className="grid gap-4">
           {dailyForecasts.map((dailyForecast, index) => (
             <ForecastItem key={index} dailyForecast={dailyForecast} />

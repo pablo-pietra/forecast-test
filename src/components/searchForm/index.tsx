@@ -64,10 +64,15 @@ const SearchForm = () => {
   };
 
   return (
-    <form className="flex space-x-4" onSubmit={handleSubmit}>
+    <form
+      data-testid="search-form"
+      className="flex space-x-4"
+      onSubmit={handleSubmit}
+    >
       <input
         type="text"
         value={address}
+        data-testid="input-address"
         placeholder="Insert full address"
         className="border rounded shadow p-2 w-full"
         onChange={(event) => setAddress(event.target.value)}
