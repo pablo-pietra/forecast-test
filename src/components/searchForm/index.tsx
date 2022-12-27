@@ -4,7 +4,7 @@ import AppContext from "../../AppContext";
 
 const API_KEY = "c771c835d0f1418eafa801008d0ee0a9";
 const WEATHER_URL = "https://api.weather.gov/points";
-const DEFAULT_ADDRESS = "1214 West Van Buren Street, Chicago, IL 60607, USA";
+const DEFAULT_ADDRESS = "1600 Pennsylvania Avenue NW, Washington, DC 20500, United States";
 
 const SearchForm = () => {
   const [address, setAddress] = useState(DEFAULT_ADDRESS);
